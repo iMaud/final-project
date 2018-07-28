@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body
+{
+  font-family: "Raleway", sans-serif;
+  color: #FFFFFF;
+}
+
+body#home
+{
+  background: url(../images/BonoboBackgd5.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body#about
+{
+  background: url(../images/BonoboBackgd2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body#tour
+{
+  background: url(../images/BonoboBackgd6.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Header */
+a
+{
+  color: #FFFFFF;
+}
+
+h1
+{
+  margin: 10px 0;
+  text-align: center;
+}
+
+h2
+{
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.header
+{
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.header, #main_box
+{
+  background-color: #000000;
+  opacity: 0.67;
+}
+
+.header #logo
+{
+  height: 49px;
+}
+
+.container, .row
+{
+  margin: 0 auto;
+  padding: 0;
+}
+
+#main_box
+{
+  padding: 30px;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#main_box div[class*="col"]
+{
+  padding: 0;
+}
+
+#about #main_box img
+{
+  float: left;
+  max-width: 200px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+#about #main_box .row .col-9
+{
+  padding-right: 20px;
+  border-right: 1px solid #979797;
+}
+
+#about #main_box .row .side
+{
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+#tour #main_box .row
+{
+  margin: 15px 0;
+}
+
+#tour #main_box div[class*="col"]
+{
+  font-size: 15px;
+  line-height: 38px;
+}
+
+#tour #main_box .dropdown-toggle
+{
+  margin-bottom: 20px;
+}
+
+#tour #main_box .col-1
+{
+  font-family: Montserrat;
+}
+
+#tour #main_box .col-1.date
+{
+  font-size: 30px;
+  text-align: center;
+}
+
+#tour #main_box .col-1.month
+{
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+}
