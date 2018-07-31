@@ -219,6 +219,12 @@ h4
   margin-left: 40px;
 }
 
+#disco #main_box .col-4
+{
+  text-align: center;
+  margin-left: 40px;
+}
+
 #disco #main_box .col.numb
 {
   font-family: Montserrat;
