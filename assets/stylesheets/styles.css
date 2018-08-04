@@ -6,17 +6,18 @@ body
   color: #FFFFFF;
 }
 
-/* BACKGROUND IMAGE */
+/* BACKGROUND IMAGE or VIDEO */
 
 body#home
 {
-  background: url(../images/BonoboBackgd5.jpg) no-repeat center center fixed;
+  background-color: #000000;
+  /*: url(../images/BonoboBackgd5.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
 body#about
@@ -128,7 +129,6 @@ h4
   height: 49px;
 }
 
-
 /* PAGE SPECIFIC */
 
 .container, .row
@@ -149,6 +149,16 @@ h4
 #main_box div[class*="col"]
 {
   padding: 0;
+}
+
+/* HOME PAGE */
+
+#home #video_box
+{
+  /*right: 0;
+  bottom: 0;*/
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* ABOUT PAGE */
@@ -223,6 +233,7 @@ h4
 {
   text-align: center;
   margin-left: 40px;
+  margin-bottom: 10px;
 }
 
 #disco #main_box .col.numb
@@ -248,11 +259,4 @@ h4
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-}
-
-#disco #main_box .col.nxtpage img
-{
-  float: right;
-  max-width: 40px;
-  margin-bottom: 20px;
 }
