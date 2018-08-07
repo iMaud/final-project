@@ -284,3 +284,15 @@ h4
 {
   margin-left: 40px;
 }
+
+/* MERCH */
+
+#merch #main_box .row .col-3
+{
+  padding-right: 30px;
+}
+
+#merch #main_box p
+{
+  font-size: 16px;
+}

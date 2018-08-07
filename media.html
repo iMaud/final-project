@@ -16,7 +16,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./assets/javascripts/script.js"></script>
-  <script src="./assets/javascripts/lightbox.min.js"></script>
   <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 </head>
 
@@ -35,64 +34,67 @@
 
       <!-- Black Box -->
       <div id="main_box">
-        <div class="row">
-          <div class="col-3">
-            <a href="./assets/images/BonoboArtist6.jpg" data-lightbox="image-1" data-title="My caption">
-              <img src="./assets/images/BonoboArtist6-thumbnail.jpg" width="221" height="205" />
-            </a>
+          <div class="row">
+            <div class="col-3">
+              <a href="./assets/images/BonoboArtist6.jpg" data-lightbox="image-1">
+                <img src="./assets/images/BonoboArtist6.jpg" width="221" height="205" />
+              </a>
+            </div>
+            <div class="col-3">
+              <img src="./assets/images/BonoboArtist7.jpg" width="221" height="205" />
+            </div>
+            <div class="col">
+              <iframe width="373" height="210" src="https://www.youtube.com/embed/ebzEEEdjHj0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
           </div>
-          <div class="col-3">
-            <img src="./assets/images/BonoboArtist7.jpg" width="221" height="205" />
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/images/BonoboArtist10.jpg" width="221" height="205" />
+            </div>
+            <div class="col-3">
+              <img src="./assets/images/BonoboMedia8.jpg" width="221" height="205" />
+            </div>
+            <div class="col">
+              <iframe width="373" height="210" src="https://www.youtube.com/embed/cTjF2_-bneM" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
           </div>
-          <div class="col">
-            <iframe width="373" height="210" src="https://www.youtube.com/embed/ebzEEEdjHj0" frameborder="0" allowfullscreen></iframe>
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/images/BonoboMedia5.jpg" width="221" height="205" />
+            </div>
+            <div class="col-3">
+              <img src="./assets/images/BonoboMedia6.jpg" width="221" height="205" />
+            </div>
+            <div class="col">
+              <iframe width="373" height="210" src="https://www.youtube.com/embed/GwQuAyNYSik" frameborder="0" aallow="autoplay; encrypted-media"></iframe>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-3">
-            <img src="./assets/images/BonoboArtist10.jpg" width="221" height="205" />
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/images/BonoboMedia7.jpg" width="221" height="205" />
+            </div>
+            <div class="col-3">
+              <img src="./assets/images/BonoboMedia4.jpg" width="221" height="205" />
+            </div>
+            <div class="col">
+              <iframe width="373" height="210" src="https://www.youtube.com/embed/n5UkQ7T4PH0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
           </div>
-          <div class="col-3">
-            <img src="./assets/images/BonoboMedia8.jpg" width="221" height="205" />
-          </div>
-          <div class="col">
-            <iframe width="373" height="210" src="https://www.youtube.com/embed/cTjF2_-bneM" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-3">
-            <img src="./assets/images/BonoboMedia5.jpg" width="221" height="205" />
-          </div>
-          <div class="col-3">
-            <img src="./assets/images/BonoboMedia6.jpg" width="221" height="205" />
-          </div>
-          <div class="col">
-            <iframe width="373" height="210" src="https://www.youtube.com/embed/GwQuAyNYSik" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-3">
-            <img src="./assets/images/BonoboMedia7.jpg" width="221" height="205" />
-          </div>
-          <div class="col-3">
-            <img src="./assets/images/BonoboMedia4.jpg" width="221" height="205" />
-          </div>
-          <div class="col">
-            <iframe width="373" height="210" src="https://www.youtube.com/embed/n5UkQ7T4PH0" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
       </div>
 
     </div>
   </div>
 
-
-  <!--
-  <footer>
-    <p><small>&copy; Copyright 2018</small></p>
-  </footer>
-  -->
-
+<!-- LIGHTBOX EFFECT -->
+<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
+<script src="./assets/javascripts/lightbox.min.js"></script>
+<!-- <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+      'albumLabel': "Image %1 of 2%"
+    })
+</script>-->
 
 </body>
 </html>
@@ -100,10 +102,3 @@
 <script>
 includeHTML();
 </script>
-
-<!--<script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-</script>-->
