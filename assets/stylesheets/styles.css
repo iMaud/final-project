@@ -11,13 +11,6 @@ body
 body#home
 {
   background-color: #000000;
-  /*: url(../images/BonoboBackgd5.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;*/
 }
 
 body#about
@@ -77,7 +70,7 @@ body#merch
 
 
 /* ANCHORS & TITLES */
-a
+a, a:hover
 {
   color: #FFFFFF;
 }
@@ -118,10 +111,17 @@ h4
     font-size: 15px;
 }
 
+.header a:hover
+{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .header, #main_box
 {
   background-color: #000000;
-  opacity: 0.67;
+  opacity: 0.80;
 }
 
 .header #logo
@@ -135,6 +135,7 @@ h4
   margin-top: 15px;
   margin-left: 12px;
 }
+
 
 /* PAGE SPECIFIC */
 
@@ -160,10 +161,12 @@ h4
 
 /* HOME PAGE */
 
-#home #video_box
-{
-  min-width: 100%;
-  min-height: 100%;
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /* ABOUT PAGE */
@@ -225,22 +228,40 @@ h4
   text-align: left;
 }
 
+#tour #main_box .col-1.month div
+{
+  width: 100%;
+  text-align: center;
+}
+
+#tour #main_box .btn
+{
+  width: 115px;
+}
+
 /* DISCOGRAPHY PAGE */
 
 #disco #main_box img
 {
-  float: center;
   max-width: 200px;
   margin-bottom: 10px;
-  margin-left: 40px;
   border-radius: 4px;
 }
 
 #disco #main_box .col-4
 {
   text-align: center;
-  margin-left: 40px;
-  margin-bottom: 10px;
+  padding-left: 120px;
+}
+
+#disco #main_box .col-4 img:hover
+{
+  transition: all .3s ease-in-out;
+}
+
+#disco #main_box .col-4 img:hover
+{
+  max-width: 220px;
 }
 
 #disco #main_box .col.numb
@@ -268,11 +289,16 @@ h4
   text-align: left;
 }
 
+#disco #main_box .carousel-item .row:last-child
+{
+  margin-bottom: 30px;
+}
+
 /* MEDIA PAGE */
 
 #media #main_box .row
 {
-  padding-left: 20px;
+  padding: 20px;
 }
 
 #media #main_box img
@@ -280,9 +306,15 @@ h4
   border-radius: 4px;
 }
 
-#media #main_box .col-3 .col
+#media #main_box .col-sm-12
 {
-  margin-left: 40px;
+  padding: 0;
+  text-align: center;
+}
+
+#media #main_box .col-md-6
+{
+  text-align: right;
 }
 
 /* MERCH */
@@ -290,9 +322,23 @@ h4
 #merch #main_box .row .col-3
 {
   padding-right: 30px;
+  margin: 20px 0;
 }
 
 #merch #main_box p
 {
   font-size: 16px;
+}
+
+#merch #main_box .btn
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: left;
+}
+
+#merch #main_box img
+{
+  width: 100%;
+  margin-bottom: 10px;
 }
